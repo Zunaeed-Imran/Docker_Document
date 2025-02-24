@@ -15,6 +15,12 @@ sudo systemctl enable docker`
 - `docker network create itlogiko-network`
 - `sudo docker compose up --build`
 
+### Database migration.
+- for to enter container.
+- `make shell`
+- to seed first exit `exit` command than.
+- `make seed` to seed database.
+
 ### facing issue in Ubuntu PC step to fix.
 - to install docker compose
 - `sudo apt update
