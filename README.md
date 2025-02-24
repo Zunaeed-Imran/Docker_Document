@@ -11,6 +11,10 @@ sudo systemctl enable docker`
 - for make the docker image
 - `docker-compose up --build`
 
+### Than i have to create network.
+- `docker network create itlogiko-network`
+- `sudo docker compose up --build`
+
 ### facing issue in Ubuntu PC step to fix.
 - to install docker compose
 - `sudo apt update
