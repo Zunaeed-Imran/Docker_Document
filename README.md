@@ -14,6 +14,7 @@ sudo systemctl enable docker`
 ### Than i have to create network.
 - `docker network create itlogiko-network`
 - `sudo docker compose up --build`
+- in UI i alos have to install `sudo npm i` for ubunto PC.
 
 ### Database migration.
 - for to enter container.
