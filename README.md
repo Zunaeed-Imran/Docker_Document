@@ -60,3 +60,24 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc`
 #### Final Check: Pull the Image Manually
 - `docker pull itlogiko/real-estate-ui`
 - `docker compose up --build`
+
+## Test git cherry-pick or git rebase.
+- `git checkout -b 1051-new 1051-existing`
+- `git rebase develop -i`
+- `git rebase --continue`
+- NOTE: Choose 1051 commits in interactive mode
+- `git checkout -b 1051-new develop`
+- `git cherry-pick \
+  commid-id-1051-1 \
+  commid-id-1051-2 \
+  commid-id-1051-3`
+
+- `git cherry-pick --continue`
+- NOTE: Find 1051 commits from branch or merge request
+- https://gitlab.com/group/repository/-/commit/commit-id
+- Test git cherry-pick or git rebase.
+- Create a branch xyz from develop.
+- Push two commits.
+- Create a branch abc from branch xyz.
+- Push two commits.
+- Follow cherry pick or rebase commands.
