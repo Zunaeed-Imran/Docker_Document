@@ -47,6 +47,7 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc`
 - `sudo systemctl status docker`
 - Run Docker as Root (Temporary Fix)
 - `sudo docker compose up --build`
+
 #### Add Your User to the Docker Group (Permanent Fix)
 - `sudo usermod -aG docker $USER`
 - Apply the changes:
@@ -57,9 +58,12 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc`
 - `docker compose up --build`
 - Verify Your Docker Permissions
 - `docker run hello-world`
+
 #### Final Check: Pull the Image Manually
 - `docker pull itlogiko/real-estate-ui`
 - `docker compose up --build`
+
+
 
 ## Test git cherry-pick or git rebase.
 - `git checkout -b 1051-new 1051-existing`
