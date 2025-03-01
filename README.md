@@ -10,6 +10,8 @@ sudo systemctl enable docker`
 - `docker --version`
 - for make the docker image
 - `docker-compose up --build`
+- this command will up and build too.
+- `make start`
 
 ### Than i have to create network.
 - `docker network create itlogiko-network`
