@@ -24,6 +24,12 @@ sudo systemctl enable docker`
 - to seed first exit `exit` command than.
 - `make seed` to seed database.
 
+### Some useful command
+- to see the list of running container.
+- `docker ps`
+- or `sudo docker ps`
+
+
 ### facing issue in Ubuntu PC step to fix.
 - to install docker compose
 - `sudo apt update
