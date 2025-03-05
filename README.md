@@ -28,7 +28,8 @@ sudo systemctl enable docker`
 - to see the list of running container.
 - `docker ps`
 - or `sudo docker ps`
-
+- Delete restore the file from your branch. File should have content from develop branch.
+- `git checkout origin/develop -- /path/to/file`
 
 ### facing issue in Ubuntu PC step to fix.
 - to install docker compose
