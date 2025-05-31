@@ -113,3 +113,25 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc`
 - Create a branch abc from branch xyz.
 - Push two commits.
 - Follow cherry pick or rebase commands.
+
+## Podman Install process in Ubuntu PC,after i already have installed docker.
+- ```sudo apt update
+sudo apt install -y podman
+```
+
+- Verify the installation:
+- `podman --version`
+
+- install podman compose
+- `sudo apt install -y podman-compose`
+
+- for UI
+- `podman network create itlogiko-network`
+- `sudo podman compose up --build`
+
+for API
+- `systemctl --user start podman.socket`
+- `systemctl --user start podman.socket`
+- `systemctl --user status podman.socket`
+- `podman compose version`
+- `sudo podman compose up --build`
