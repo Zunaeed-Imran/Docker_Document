@@ -6,10 +6,13 @@ i will document the docker install process in Ubuntu PC.
 sudo apt install docker.io
 sudo systemctl start docker
 sudo systemctl enable docker`
+
 - To verify version
 - `docker --version`
+
 - for make the docker image
 - `docker-compose up --build`
+
 - this command will up and build too.
 - `make start`
 
@@ -21,13 +24,16 @@ sudo systemctl enable docker`
 ### Database migration.
 - for to enter container.
 - `make shell`
+
 - to seed first exit `exit` command than.
 - `make seed` to seed database.
 
 ### Some useful command
-- to see the list of running container.
+- to see or check the list of running container.
 - `docker ps`
+
 - or `sudo docker ps`
+
 - Delete restore the file from your branch. File should have content from develop branch.
 - `git checkout origin/develop -- /path/to/file`
 
@@ -35,14 +41,19 @@ sudo systemctl enable docker`
 - to install docker compose
 - `sudo apt update
 sudo apt install docker-compose-plugin`
+
 - than check the version of docker.
 - `docker compose version`
+
 - if still have the issue run those command.
 - `sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose`
+
 - `docker compose up --build`
+
 - if still have issue
 - `sudo systemctl restart docker`
+
 - than run some command
 - `sudo apt update
 sudo apt install ca-certificates curl gnupg`
@@ -57,6 +68,7 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc`
 
 #### Check If Docker is Running
 - `sudo systemctl status docker`
+
 - Run Docker as Root (Temporary Fix)
 - `sudo docker compose up --build`
 
@@ -64,10 +76,13 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc`
 - `sudo usermod -aG docker $USER`
 - Apply the changes:
 - `newgrp docker`
+
 - Restart Docker:
 - `sudo systemctl restart docker`
+
 - Now, try running the command without sudo
 - `docker compose up --build`
+
 - Verify Your Docker Permissions
 - `docker run hello-world`
 
@@ -81,6 +96,7 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc`
 - `git checkout -b 1051-new 1051-existing`
 - `git rebase develop -i`
 - `git rebase --continue`
+
 - NOTE: Choose 1051 commits in interactive mode
 - `git checkout -b 1051-new develop`
 - `git cherry-pick \
