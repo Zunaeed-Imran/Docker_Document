@@ -146,3 +146,9 @@ sudo systemctl stop docker.service`
 - `sudo systemctl disable docker.socket
 sudo systemctl disable docker.service`
 - `systemctl status docker`
+
+- `sudo systemctl start docker.service docker.socket`
+
+- `docker system prune --all --force --volumes`
+
+- `sudo systemctl stop docker.service docker.socket`
