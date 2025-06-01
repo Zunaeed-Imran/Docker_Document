@@ -135,3 +135,14 @@ for API
 - `systemctl --user status podman.socket`
 - `podman compose version`
 - `sudo podman compose up --build`
+
+### Docker uninstalled from ubuntu PC
+- `systemctl status docker`
+- `sudo systemctl disable docker`
+- `sudo systemctl stop docker`
+
+- `sudo systemctl stop docker.socket
+sudo systemctl stop docker.service`
+- `sudo systemctl disable docker.socket
+sudo systemctl disable docker.service`
+- `systemctl status docker`
