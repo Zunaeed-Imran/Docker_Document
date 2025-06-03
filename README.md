@@ -152,3 +152,15 @@ sudo systemctl disable docker.service`
 - `docker system prune --all --force --volumes`
 
 - `sudo systemctl stop docker.service docker.socket`
+
+### Check container running in background(sudo issue in ubuntu).
+
+- Step-1: Check if any process is running or not:
+
+- sudo lsof -iTCP:{port number} -sTCP:LISTEN
+
+- Step-2: If running kill: sudo kill -9 {pid}
+
+- Step-3: make stop
+
+- Step-4: make start
