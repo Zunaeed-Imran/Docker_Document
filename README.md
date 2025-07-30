@@ -164,3 +164,7 @@ sudo systemctl disable docker.service`
 - Step-3: make stop
 
 - Step-4: make start
+
+### After update laravel latest version
+- `podman compose up`
+- than `make start` it should worked
