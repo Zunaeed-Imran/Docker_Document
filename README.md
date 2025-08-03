@@ -168,3 +168,4 @@ sudo systemctl disable docker.service`
 ### After update laravel latest version
 - `podman compose up`
 - than `make start` it should worked
+- for UI also `make composer-install`
