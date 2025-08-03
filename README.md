@@ -169,3 +169,10 @@ sudo systemctl disable docker.service`
 - `podman compose up`
 - than `make start` it should worked
 - for UI also `make composer-install`
+
+### git rebase process
+- `git rebase -i origin/develop`
+- than drop the branch where from
+- ctrl+O -> enter -> ctrl+x
+- `git push -f`
+- than it should work fine
